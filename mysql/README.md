@@ -3,9 +3,9 @@
 ```
 mysql５.7　之后是mysql8, 修改变动比较大，使用方式也有改动，暂时只用mysql5.7
 
-docker run --name mysql5.7-p 192.168.1.100:3306:3306 -v /data/docker/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=pwd@123A -d mysql:5.7
+docker run --name mysql5.7 -p 192.168.1.100:3306:3306 -v /data/docker/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=pwd@123A -d mysql:5.7
 
-docker run --name mysql5.7--net=host -v /data/docker/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=pwd@123A -d mysql:5.7
+docker run --name mysql5.7 --net=host -v /data/docker/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=pwd@123A -d mysql:5.7
 ```
 ---
 
